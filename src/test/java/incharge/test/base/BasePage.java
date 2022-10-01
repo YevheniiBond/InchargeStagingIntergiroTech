@@ -74,8 +74,8 @@ abstract public class BasePage {
         try {
             wait.until(ExpectedConditions.invisibilityOf(element));
         } catch (WebDriverException e) {
-            log.error("No clickable elements: " + element);
-            fail("No clickable elements: " + element);
+            log.error("Element is visible: " + element);
+            fail("Element is visible: " + element);
         }
     }
 
